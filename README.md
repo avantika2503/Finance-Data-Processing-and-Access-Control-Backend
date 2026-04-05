@@ -4,7 +4,13 @@ Spring Boot backend for the finance dashboard assignment. Built **phase by phase
 
 ## Current status
 
-- **Phase 1 complete:** Maven project, dependencies (Web, JPA, Security, H2, Validation, Lombok, jjwt, SpringDoc), runnable app.
+- **Phase 1:** Maven project and dependencies.
+- **Phase 2:** File-based H2 (`./data/financedb`), enums (`Role`, `UserStatus`, `RecordType`), `User` and `FinancialRecord` entities, JPA repositories.
+
+### Verify Phase 2
+
+1. Run `.\mvnw.cmd spring-boot:run` — the app should start and Hibernate should create/update tables (`users`, `financial_records`).
+2. Optional: open the H2 console at `http://localhost:8080/h2-console` (Spring Security may block this until Phase 3; JDBC URL: `jdbc:h2:file:./data/financedb`, user `sa`, empty password).
 
 ## Prerequisites
 
