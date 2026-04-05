@@ -9,13 +9,14 @@ Spring Boot backend for the finance dashboard assignment. Built **phase by phase
 ## Prerequisites
 
 - JDK 17+
-- Maven 3.9+ (or use the Maven wrapper once added)
 
 ## Run locally
 
 ```bash
-mvn spring-boot:run
+.\mvnw.cmd spring-boot:run
 ```
+
+(Or `mvn spring-boot:run` if Maven is on your `PATH`.)
 
 ## GitHub
 
